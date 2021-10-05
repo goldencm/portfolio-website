@@ -10,8 +10,9 @@
     border-top-right-radius: 30%;
     border-bottom-right-radius: 30%;
     float: left;
-    padding-top: 120%;
-    padding-bottom: 120%;
+    padding-top: .7%;
+    padding-bottom: .7%;
+    position: fixed;
     width: min-content;
     background-color: #dddddd;
 }
@@ -41,7 +42,7 @@
     border-bottom-right-radius: 7px;
     background-color: #ff89f9;
     padding-right: .1em;
-    position: absolute;
+    position: fixed;
     float: left;
     width: min-content;
 
