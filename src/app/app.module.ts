@@ -11,6 +11,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
 import { HireMeComponent } from './hire-me/hire-me.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environments/environment';
+
 
 @NgModule({
   declarations: [
@@ -28,6 +31,7 @@ import { HireMeComponent } from './hire-me/hire-me.component';
     BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
   bootstrap: [AppComponent]
