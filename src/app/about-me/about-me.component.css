@@ -1,0 +1,12 @@
+h3 {
+    margin-right: 5px;
+}
+
+p {
+    margin-top: 0;
+}
+
+
+.title {
+    display: flex;
+}

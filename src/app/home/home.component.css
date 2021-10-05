@@ -1,0 +1,16 @@
+.github-widget {
+    background-color: #ffffff;
+} 
+
+.gw-container {
+    background-color: rgb(0, 0, 0);
+    padding: .5%;
+    float: right;
+    padding-top: 1em;
+    border-radius: 1em;
+}
+
+.gw-container h3 {
+    color: #ffffff;
+    margin-left: 37%;
+}

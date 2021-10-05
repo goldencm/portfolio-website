@@ -1,0 +1,29 @@
+<div (mouseenter)='over()' class="nav-over">
+    <div class="nav-dropdown-tab">
+        <img src="assets/nav-dropdown.png" width="15" height="15" class="nav-img">
+    </div>
+    
+</div>
+<div  (mouseleave)='out()' *ngIf="visible" class="topnav-bar" [@slideInOut]>
+    <div class="nav-border">
+        <div class="nav-links">
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="/contact">Contact</a>
+                </li>
+                <li>
+                    <a href="/about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="/resume">Resume</a>
+                </li>
+                <li>
+                    <a href="/hire-me">Hire Me</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

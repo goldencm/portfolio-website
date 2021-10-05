@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "p-web": "portfolio-web-e7cde",
+    "default": "portfolio-web-e7cde"
+  },
+  "targets": {
+    "portfolio-web-e7cde": {
+      "hosting": {
+        "personal-web": [
+          "portfolio-web-e7cde"
+        ]
+      }
+    }
+  }
+}
