@@ -1,8 +1,12 @@
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
 .wrapper {
     min-height: 100%;
     margin-bottom: -50px;
 }
 
 app-footer {
-    height: 2.5rem; 
+    height: 2.5rem;
 }
