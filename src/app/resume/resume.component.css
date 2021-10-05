@@ -3,7 +3,7 @@ iframe {
     height: 1025px;
 }
 
-.pdf-container {
+.center-container {
     display: flex;
     justify-content: center;
 }
@@ -15,4 +15,16 @@ iframe {
 
 h3 {
     margin-right: 5px;
+}
+
+a.button {
+    background-color: hsl(288, 49%, 54%);
+    margin-top: 2%;
+    padding: .75% 1% .75%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
 }
