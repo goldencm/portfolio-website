@@ -20,10 +20,12 @@ import { Component, OnInit } from '@angular/core';
     ]),
     trigger('time', [
       transition('* => *', [
-        animate('300ms ease-in', style({'padding-left': ".3%"})),
-        animate('300ms ease-in', style({'padding-left': "0"})),
-        animate('300ms ease-in', style({'padding-left': ".3%"})),
-        animate('300ms ease-in', style({'padding-left': "0"})),
+        animate('250ms ease-in', style({'padding-left': ".4%"})),
+        animate('250ms ease-in', style({'padding-left': "0"})),
+        animate('250ms ease-in', style({'padding-left': ".4%"})),
+        animate('250ms ease-in', style({'padding-left': "0"})),
+        animate('250ms ease-in', style({'padding-left': ".4%"})),
+        animate('250ms ease-in', style({'padding-left': "0"})),
       ])
     ])
   ],
@@ -58,10 +60,7 @@ export class NavComponent implements OnInit {
 
   triggerAnimation() {
     if (!this.viewed) {
-      this.triggerAnim = !this.triggerAnim;
-      console.log("triggered") 
-    } else {
-      console.log("off")
+      this.triggerAnim = !this.triggerAnim; 
     }
        
   }
