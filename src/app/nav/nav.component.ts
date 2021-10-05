@@ -17,24 +17,53 @@ import { Component, OnInit } from '@angular/core';
       transition(':leave', [
         animate('500ms ease-in', style({transform: 'translateX(-100%)'}))
       ])
+    ]),
+    trigger('time', [
+      transition('* => *', [
+        animate('300ms ease-in', style({'padding-left': ".3%"})),
+        animate('300ms ease-in', style({'padding-left': "0"})),
+        animate('300ms ease-in', style({'padding-left': ".3%"})),
+        animate('300ms ease-in', style({'padding-left': "0"})),
+      ])
     ])
   ],
 })
 export class NavComponent implements OnInit {
 
   visible = false;
+  triggerAnim = false;
+  viewed = false;
 
-  constructor() { }
+
+  constructor() {
+    setInterval(()=>{
+      this.triggerAnimation()
+    },8000);
+    
+   }
 
   ngOnInit(): void {
   }
 
   over(): void {
+    if (!this.viewed) {
+      this.viewed = true;
+    }
     this.visible = true;
   }
 
   out(): void {
     this.visible = false;
+  }
+
+  triggerAnimation() {
+    if (!this.viewed) {
+      this.triggerAnim = !this.triggerAnim;
+      console.log("triggered") 
+    } else {
+      console.log("off")
+    }
+       
   }
 
 }
